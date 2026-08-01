@@ -2,6 +2,7 @@
 
 namespace Tests\Unit\Rules;
 
+use Cpuch\BarcodeValidator\BarcodeValidatorServiceProvider;
 use Cpuch\BarcodeValidator\Rules\BarcodeValidatorRule;
 use Orchestra\Testbench\TestCase;
 
@@ -13,7 +14,7 @@ class ValidatorRuleTest extends TestCase
     {
         // Ajoute ton service provider pour charger les traductions
         return [
-            \Cpuch\BarcodeValidator\BarcodeValidatorServiceProvider::class,
+            BarcodeValidatorServiceProvider::class,
         ];
     }
 
